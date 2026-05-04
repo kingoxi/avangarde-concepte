@@ -1,0 +1,25 @@
+# Avangarde Concept Perde Ürün İçerikleri
+
+Bu klasörde Avangarde Concept Perde ürün sayfaları için statik HTML içerikleri yer alır. Her ürün sayfası `stor-perde.html` dosyasındaki mevcut `product-detail` template yapısı korunarak hazırlanmıştır.
+
+Ürün dosyaları:
+
+- stor-perde.html
+- zebra-perde.html
+- tul-perde.html
+- fon-perde.html
+- ahsap-jaluzi.html
+- deri-jaluzi.html
+- aluminyum-jaluzi.html
+- plise-perde.html
+- zip-perde.html
+- motorlu-perde-sistemleri.html
+- dikey-perde.html
+- ikili-perde.html
+- screen-perde.html
+- rustik.html
+- kis-bahcesi-perde-sistemleri.html
+- dosemelik-kumas.html
+- duvar-kagidi.html
+
+Menü linkleri ve yönetim panelinden gelen dinamik alanlar sistem tarafından yönetilmelidir. Bu dosyalar yalnızca ürün içerik template'i olarak kullanılmalıdır.

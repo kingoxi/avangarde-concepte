@@ -1,0 +1,347 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="KZ.WebUI.Main" %>
+
+<%@ Import Namespace="KZ.Business.Concrete" %>
+
+<!DOCTYPE html>
+
+<html lang="<%=Resources.value.url_Folder %>">
+<head runat="server">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Bella Yazılım" />
+    <meta name="robot" content="follow,index"/>
+    <meta name="publisher" content="Bella Yazılım"/>
+
+    <link rel="icon"  href="/site_files/images/logo/perde-logo.ico" />
+    <link rel="apple-touch-icon" href="/site_files/images/logo/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/site_files/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/site_files/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/site_files/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/site_files/css/slick.css" />
+    <link rel="stylesheet" href="/site_files/css/meanmenu.css" />
+    <link rel="stylesheet" href="/site_files/css/nice-select.css" />
+    <link rel="stylesheet" href="/site_files/css/animate.css" />
+    <link rel="stylesheet" href="/site_files/css/style.css" />
+
+    <%= StaticGeneralSettingManager.GeneralSettingData().Code %>
+
+    <style>
+        #contactMap iframe{
+            width:100%!important;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+
+
+        <%= StaticGeneralSettingManager.GeneralSettingData().BodyCode %>
+
+        <!-- Header Start !-->
+        <header class="header-area style-1 site-header-premium">
+            <div class="header-area-wrapper">
+                <div class="logo-wrapper d-flex align-items-center">
+                    <div class="te-logo">
+                        <a href="/<%=Resources.value.url_Folder %>" class="te-standard-logo">
+                            <img src="/site_files/images/logo/logo.png" alt="<%= StaticGeneralSettingManager.GeneralSettingData().SeoTitle %>" title="Avangarde Concept Perde" width="150px" height="150px" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header-inner">
+                    <!-- Header Top Start -->
+                    <div class="header-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="te-header-top-wrapper">
+                                        <div class="header-top-info">
+                                            <div class="te-header-contact-info">
+                                                <span>
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    <%= StaticGeneralSettingManager.GeneralSettingData().Address %>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="header-top-info">
+                                            <div class="te-social-profile">
+                                                <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Facebook %>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+
+                                                <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Twitter %>" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+
+                                                <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Instagram %>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header Top End -->
+
+                    <!-- Header Nav Menu Start -->
+                    <div class="te-header-menu-area te-sticky-header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex align-items-center justify-content-end">
+                                    <div class="te-logo-wrapper">
+                                        <div class="te-logo">
+                                            <a href="/<%=Resources.value.url_Folder %>" class="te-sticky-logo">
+                                                <img src="/site_files/images/logo/logo.png" alt="<%= StaticGeneralSettingManager.GeneralSettingData().SeoTitle %>" title="Avangarde Concept Perde" />
+                                            </a>
+                                            <a href="/<%=Resources.value.url_Folder %>" class="te-retina-logo">
+                                                <img src="/site_files/images/logo/logo.png" alt="<%= StaticGeneralSettingManager.GeneralSettingData().SeoTitle %>" title="Avangarde Concept Perde" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="te-menu d-inline-block">
+                                        <nav id="main-menu" class="te-main-menu">
+                                            <ul>
+
+                                                <asp:Literal ID="ltlHeaderMenuList" runat="server"></asp:Literal>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="site-header-actions">
+                                        <a class="site-header-phone" href="tel:+<%= StaticGeneralSettingManager.GeneralSettingData().Phone2.Replace(" ","").Replace("(","").Replace(")","").Replace("+","") %>" title="Avangarde Concept Perde telefon">
+                                            <i class="fa-solid fa-phone"></i>
+                                            <span><%= StaticGeneralSettingManager.GeneralSettingData().Phone %></span>
+                                        </a>
+                                        <a class="site-header-cta" href="/tr/iletisim" title="Ücretsiz keşif talebi oluştur">
+                                            Ücretsiz Keşif
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <!-- Header Button Start
+                                    <div class="te-header-btn">
+                                        <div class="te-cta-btn">
+                                            <span>
+                                                <%= Resources.value.Bize_Ulasin %>
+                                            </span>
+                                            <a href="tel:+<%= StaticGeneralSettingManager.GeneralSettingData().Phone2.Replace(" ","").Replace("(","").Replace(")","").Replace("+","") %>"><i class="fa-solid fa-phone"></i>
+                                                <%= StaticGeneralSettingManager.GeneralSettingData().Phone %>
+                                            </a>
+                                        </div>
+                                        <a href="/<%= Resources.value.url_Folder %><%= Resources.value.url_OnKayitFormu %>" class="te-quote-btn">
+                                            <%= Resources.value.On_Kayit %>
+
+                                            <i class="fa-solid fa-arrow-right"></i>
+
+                                        </a>
+                                    </div>
+                                     Header Button End !-->
+
+                                    <!-- Mobile Menu Toggle Button Start !-->
+                                    <div class="te-mobile-menu-bar d-lg-none text-end">
+                                        <a href="#" class="te-mobile-menu-toggle-btn"><i class="fal fa-bars"></i></a>
+                                    </div>
+                                    <!-- Mobile Menu Toggle Button End !-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header Nav Menu End -->
+                </div>
+            </div>
+        </header>
+        <!-- Header End !-->
+
+        <!-- Menu sidebar Section Start -->
+        <div class="te-menu-sidebar-area">
+            <div class="te-menu-sidebar-wrapper">
+                <div class="te-menu-sidebar-close">
+                            <button class="te-menu-sidebar-close-btn" id="menu_sidebar_close_btn" title="Menüyü kapat">
+                        <i class="fal fa-times"></i>
+                    </button>
+                </div>
+                <div class="te-menu-sidebar-content">
+                    <div class="te-menu-sidebar-logo">
+                        <a href="/<%= Resources.value.url_Folder %>">
+                            <img src="/site_files/images/logo/logo.png" alt="<%= StaticGeneralSettingManager.GeneralSettingData().SeoTitle %>" title="Avangarde Concept Perde" />
+                        </a>
+                    </div>
+                    <div class="te-mobile-nav-menu"></div>
+                    <div class="te-menu-sidebar-content">
+                        <div class="te-menu-sidebar-single-widget">
+
+                            <h5 class="te-menu-sidebar-title">
+                                <%=Resources.value.Iletisim_Bilgileri %>
+                            </h5>
+
+                            <div class="te-header-contact-info">
+                                <span><i class="fa-solid fa-location-dot"></i>
+                                    <%= StaticGeneralSettingManager.GeneralSettingData().Address %>
+                                </span>
+                                <span><a href="tel:+<%= StaticGeneralSettingManager.GeneralSettingData().Phone2.Replace(" ","").Replace("(","").Replace(")","").Replace("+","") %>">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <%= StaticGeneralSettingManager.GeneralSettingData().Phone %>
+                                </a>
+                                </span>
+                            </div>
+                            <div class="te-social-profile">
+                                <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Facebook %>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+
+                                <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Twitter %>" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+
+                                <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Instagram %>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu sidebar Section End -->
+        <div class="te-body-overlay"></div>
+
+        <asp:ContentPlaceHolder ID="content" runat="server"></asp:ContentPlaceHolder>
+
+        <!--- Start Footer !-->
+        <footer class="footer style-1">
+            <div class="te-footer-bg" style="background-image: url('/site_files/images/section-bg/footer-bg.png');">
+                <div class="footer-bg-overlay" style="background-color: rgba(23, 23, 23, 0.9)"></div>
+            </div>
+            <div class="te-footer-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="te-footer-widget">
+                                <div class="te-footer-widget-info">
+                                    <div class="te-footer-logo">
+                                        <a href="/<%= Resources.value.url_Folder %>">
+                                            <img src="/site_files/images/logo/logo.png" alt="<%= StaticGeneralSettingManager.GeneralSettingData().SeoTitle %>" title="Avangarde Concept Perde" />
+
+                                        </a>
+                                    </div>
+                                    <div class="te-social-profile-wrapper">
+                                        <div class="te-social-profile">
+                                            <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Facebook %>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+
+                                            <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Twitter %>" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+
+                                            <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Instagram %>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 footer-nav-widget">
+                            <div class="row">
+
+
+
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="te-footer-widget te_widget_nav_menu">
+                                        <h2 class="te-footer-widget-title">
+                                            <%=Resources.value.Kurumsal %>
+                                        </h2>
+                                        <ul class="no-icon">
+                                            <asp:Literal ID="ltlFooterMenuList" runat="server"></asp:Literal>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="te-footer-widget te_widget_nav_menu">
+                                        <h2 class="te-footer-widget-title">
+                                            <%=Resources.value.Hizmetlerimiz %>
+                                        </h2>
+                                        <ul class="no-icon">
+                                            <asp:Literal ID="ltlFooterMenuList2" runat="server"></asp:Literal>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="te-footer-widget">
+                                <div class="te-footer-widget-info">
+                                    <h2 class="te-footer-widget-title">
+                                        <%= Resources.value.Iletisim_Bilgileri %>
+                                    </h2>
+                                    <div class="single-info-wrapper">
+                                        <div class="single-info">
+                                            <span class="text" id="contactMap">
+
+                                                <%= StaticGeneralSettingManager.GeneralSettingData().Maps %>
+                                        
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="te-footer-bottom-wrapper">
+                                <div class="te-copyright-text">
+                                    <p>
+                                        &copy; <a href="https://bellayazilim.com" rel="dofollow" target="_blank">Bella Yazılım</a> <span id="year">2026</span> | Tüm
+                  Hakları
+                  Saklıdır
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--- End Footer !-->
+        <script>
+</script>
+
+
+        <!-- Scroll Up Section Start -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+            </svg>
+        </div>
+        <!-- Scroll Up Section End -->
+
+        <!-- All JS File -->
+        <script src="/site_files/js/jquery.min.js"></script>
+        <script src="/site_files/js/bootstrap.min.js"></script>
+        <script src="/site_files/js/jquery.nice-select.min.js"></script>
+        <script src="/site_files/js/slick.min.js"></script>
+        <script src="/site_files/js/jquery.counterup.min.js"></script>
+        <script src="/site_files/js/waypoints.js"></script>
+        <script src="/site_files/js/jquery.meanmenu.min.js"></script>
+        <script src="/site_files/js/jquery.magnific-popup.min.js"></script>
+        <script src="/site_files/js/inview.min.js"></script>
+        <script src="/site_files/js/wow.js"></script>
+        <script src="/site_files/js/tilt.jquery.js"></script>
+        <script src="/site_files/js/isotope.min.js"></script>
+        <script src="/site_files/js/jquery.imagesloaded.min.js"></script>
+        <script src="/site_files/js/scrolltotop.min.js"></script>
+        <script src="/site_files/js/custom.js"></script>
+
+        <asp:ContentPlaceHolder ID="custom" runat="server"></asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

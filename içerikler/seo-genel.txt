@@ -1,0 +1,41 @@
+SAYFA: Ana Sayfa
+SEO Title: Avangarde Concept Perde | Perde ve Dekorasyon Çözümleri
+SEO Description: Avangarde Concept Perde; ev, ofis, otel ve projeler için keşif, ölçü alma, perde tasarımı ve profesyonel montaj hizmeti sunar.
+SEO Keywords: avangarde concept perde, perde, perde modelleri, dekorasyon, ölçüye özel perde
+H1 Önerisi: Yaşam Alanlarınıza Zarif Perde Çözümleri
+Sayfa Açıklaması: Ana sayfa, markanın premium perde ve dekorasyon yaklaşımını; ürün grupları, keşif, ölçü alma ve montaj hizmetleriyle birlikte anlatmalıdır.
+
+SAYFA: Hakkımızda
+SEO Title: Hakkımızda | Avangarde Concept Perde
+SEO Description: Avangarde Concept Perde'nin kaliteli kumaş, profesyonel ölçü alma, temiz montaj ve müşteri memnuniyeti odaklı yaklaşımını tanıyın.
+SEO Keywords: avangarde concept perde hakkımızda, perde firması, dekorasyon çözümleri, profesyonel perde
+H1 Önerisi: Hakkımızda
+Sayfa Açıklaması: Hakkımızda sayfası, markanın kurumsal yapısını, kaliteli malzeme seçimini, ölçüye özel tasarım anlayışını ve güvenilir montaj yaklaşımını öne çıkarmalıdır.
+
+SAYFA: Hizmetlerimiz
+SEO Title: Hizmetlerimiz | Avangarde Concept Perde
+SEO Description: Ücretsiz keşif, yerinde ölçü alma, perde tasarımı, dekorasyon danışmanlığı ve profesyonel montaj hizmetlerimizi inceleyin.
+SEO Keywords: perde hizmetleri, ücretsiz keşif, ölçü alma, perde montajı, dekorasyon danışmanlığı
+H1 Önerisi: Hizmetlerimiz
+Sayfa Açıklaması: Hizmetlerimiz sayfası, keşiften montaja kadar tüm perde ve dekorasyon hizmetlerini açık ve güven veren bir dille sunmalıdır.
+
+SAYFA: Ürünlerimiz
+SEO Title: Ürünlerimiz | Avangarde Concept Perde
+SEO Description: Stor, zebra, tül, fon, jaluzi, plise, zip, motorlu perde, duvar kağıdı ve döşemelik kumaş seçeneklerini keşfedin.
+SEO Keywords: perde ürünleri, stor perde, zebra perde, tül perde, jaluzi, motorlu perde
+H1 Önerisi: Ürünlerimiz
+Sayfa Açıklaması: Ürünlerimiz sayfası, farklı perde sistemlerini ve dekorasyon tamamlayıcılarını kategori mantığıyla kullanıcıya sunmalıdır.
+
+SAYFA: Projelerimiz
+SEO Title: Projelerimiz | Avangarde Concept Perde
+SEO Description: Ev, villa, ofis, otel ve kurumsal alanlarda tamamlanan perde ve dekorasyon uygulamalarımızı inceleyin.
+SEO Keywords: perde projeleri, dekorasyon projeleri, otel perde uygulaması, ofis perde uygulaması
+H1 Önerisi: Projelerimiz
+Sayfa Açıklaması: Projelerimiz sayfası, tamamlanan uygulamaları kalite, ölçü hassasiyeti, estetik ve montaj başarısı üzerinden tanıtmalıdır.
+
+SAYFA: İletişim
+SEO Title: İletişim | Avangarde Concept Perde
+SEO Description: Ücretsiz keşif, ölçü alma, perde tasarımı ve montaj talepleriniz için Avangarde Concept Perde ile iletişime geçin.
+SEO Keywords: perde keşif talebi, perde iletişim, ölçü alma, perde montaj talebi
+H1 Önerisi: İletişim / Keşif Talebi
+Sayfa Açıklaması: İletişim sayfası, kullanıcıların keşif ve ölçü alma talebini kolayca iletebileceği güven veren bir başvuru alanı olarak düzenlenmelidir.

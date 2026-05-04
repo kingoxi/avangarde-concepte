@@ -1,0 +1,488 @@
+Sen deneyimli bir ASP.NET WebForms / HTML / CSS içerik düzenleyicisisin.
+
+PROJE KLASÖRÜ:
+C:\Users\hamza\Desktop\On Working\Bella Yazilim\avangard\perdeci.bellayazilim.com\avangard
+
+GENEL AMAÇ:
+Bu proje Avangarde Concept Perde markası için hazırlanacak çok parçalı / çok sayfalı bir ASP.NET WebForms sitesidir.
+
+Mevcut site yapısını, ASP.NET kodlarını, MasterPage bağlantılarını, dinamik yönetim panelinden gelen alanları, dosya yollarını, çalışan script/css sistemini ve layout mantığını BOZMADAN içerikleri Avangarde Concept Perde markasına uygun hale getir.
+
+Siteyi tek sayfalık landing page gibi düşünme.
+Bu site içerikler klasörü, ürün sayfaları, dinamik menüler ve ASP.NET WebForms yapısıyla çalışan bir sistemdir.
+
+MARKA:
+Avangarde Concept Perde
+
+SEKTÖR:
+Perde, dekorasyon, iç mekan çözümleri, ölçü alma, montaj, kumaş, duvar kağıdı ve perde sistemleri.
+
+REFERANS:
+https://avangardeconceptperde.com/
+
+Referans sitenin genel kurumsal dilini, perde/dekorasyon mantığını, hizmet yaklaşımını ve premium atmosferini örnek al.
+Ancak birebir metin kopyalama yapma.
+Tüm içerikleri özgün Türkçe ile yeniden yaz.
+
+ÇOK KRİTİK KURALLAR:
+1. ASP.NET WebForms kodlarına dokunma.
+2. Siteyi baştan yazma.
+3. Tek sayfalık siteye dönüştürme.
+4. Dinamik menü yapısına dokunma.
+5. Management / yönetim panelinden gelen menü, ürün listesi, kategori, link veya benzeri dinamik yapılara elle müdahale etme.
+6. Header menüsünü elle yeniden yazma.
+7. Yönetim panelinden gelen içerik alanlarını, repeater/list/data-bound yapılara benzeyen ASP.NET alanlarını değiştirme.
+8. Sadece statik görünen metinleri, HTML içerik dosyalarını, ürün içeriklerini, SEO metinlerini, alt/title açıklamalarını ve CSS renk/font değişkenlerini düzenle.
+9. Çalışan class, ID, runat, ContentPlaceHolder, form, script, link ve include yapılarını bozma.
+10. Görsel dosya yollarını kırma.
+11. Mevcut HTML düzenini koru; sadece içerik değiştir ve gerekli yerlerde içerik ekle.
+12. Bootstrap, FontAwesome, jQuery, Slick gibi vendor dosyalarına dokunma.
+13. Yeni framework ekleme.
+14. Eğitim/kurs/dershane temalı bütün kalıntıları temizle.
+
+KESİNLİKLE DOKUNULMAYACAK ASP.NET YAPILARI:
+- <%@ Page ... %>
+- <%@ Master ... %>
+- <asp:Content ...>
+- <asp:ContentPlaceHolder ...>
+- runat="server"
+- ID değerleri
+- ClientIDMode
+- form runat="server"
+- ScriptManager
+- Repeater / ListView / DataList gibi dinamik veri yapıları
+- Management panelden gelen menü/kategori/ürün/link yapıları
+- Server-side C# bağlantıları
+- CSS/JS include pathleri
+- MasterPage bağlantıları
+
+DİNAMİK MENÜ / MANAGEMENT KURALI:
+Bu sitenin menüleri ve bazı benzer alanları management / yönetim panelinden ekleniyor olabilir.
+Bu yüzden:
+- Menüleri elle değiştirme.
+- Menü itemlarını elle silme/ekleme.
+- Dinamik link yapılarını bozma.
+- Yönetim panelinden gelen alanlara sabit HTML basma.
+- Eğer bir alan dinamik görünüyorsa sadece çevresindeki statik başlık/açıklama gibi alanları düzenle.
+- Emin değilsen dokunma ve raporda belirt.
+
+İÇERİK DÖNÜŞÜMÜ:
+Projede geçen eğitim/kurs/dershane içeriklerini tamamen kaldır.
+Aşağıdaki kelimeleri proje genelinde ara:
+- kurs
+- dershane
+- öğrenci
+- öğretmen
+- LGS
+- YKS
+- sınav
+- deneme
+- rehberlik
+- eğitim koçluğu
+- kayıt
+- sınıf
+- akademik takip
+
+Bu kelimeler perde/dekorasyon bağlamında kullanılmıyorsa uygun karşılıklarla değiştir.
+
+Örnek dönüşümler:
+- “Eğitim programlarımız” → “Perde ve Dekorasyon Çözümlerimiz”
+- “Öğrenci takibi” → “Keşif, ölçü ve montaj süreci”
+- “Rehberlik desteği” → “Dekorasyon danışmanlığı”
+- “Deneme sınavı” → “Ücretsiz keşif ve ölçü alma”
+- “Kayıt bilgisi al” → “Ücretsiz Keşif Talebi”
+- “Programlarımızı incele” → “Ürünleri İncele”
+
+GENEL SİTE İÇERİKLERİ:
+Aşağıdaki içerik başlıklarını mevcut bölümlere uygun şekilde yerleştir.
+Yeni layout kurma; mevcut bölümleri bu temaya çevir.
+
+Ana sayfa / genel içerik başlıkları:
+- Yaşam Alanlarınıza Zarif Perde Çözümleri
+- Avangarde Concept Perde ile Şıklık ve Fonksiyon Bir Arada
+- Evinize, Ofisinize ve Projelerinize Özel Perde Tasarımları
+- Ücretsiz Keşif ve Ölçü Alma Hizmeti
+- Profesyonel Montaj ve Dekorasyon Danışmanlığı
+- Ürün Gruplarımız
+- Neden Avangarde Concept Perde?
+- Ölçüden Montaja Profesyonel Süreç
+- Projelerimiz
+- Sıkça Sorulan Sorular
+- İletişim / Keşif Talebi
+
+Hizmet başlıkları:
+- Ücretsiz keşif
+- Yerinde ölçü alma
+- Mekana özel perde tasarımı
+- Profesyonel montaj
+- İç mekan dekorasyon danışmanlığı
+- Ev, villa, ofis, otel ve kurumsal alan çözümleri
+- Proje bazlı perde uygulamaları
+
+HAKKIMIZDA İÇERİĞİ:
+Avangarde Concept Perde; yaşam alanlarına estetik, kalite ve fonksiyon kazandıran perde ve dekorasyon çözümleri sunan kurumsal bir marka olarak anlatılacak.
+
+Vurgular:
+- Kaliteli kumaş ve malzeme seçimi
+- Mekana özel tasarım yaklaşımı
+- Profesyonel ölçü alma
+- Temiz ve güvenilir montaj
+- Modern ve klasik dekorasyon stillerine uygun çözümler
+- Müşteri memnuniyeti
+- Ev, ofis, otel, villa ve kurumsal projelere hizmet
+
+HİZMETLERİMİZ İÇERİĞİ:
+Hizmetler sayfasındaki tüm metinler perde/dekorasyon hizmetlerine göre düzenlenecek.
+Eğitim/kurs/dershane içeriği kalmayacak.
+
+DÜZENLENECEK DOSYALAR:
+Aşağıdaki dosyaları analiz et ve sadece gerekli içerik düzenlemelerini yap:
+
+- Default.aspx
+- Main.Master
+- içerikler/anasayfa-icerik-1.html
+- içerikler/anasayfa-icerik-2.html
+- içerikler/anasayfa-icerik-3.html
+- içerikler/anasayfa-icerik-4.html
+- içerikler/anasayfa-icerik-5.html
+- içerikler/anasayfa-icerik-6.html
+- içerikler/anasayfa-icerik-7.html
+- içerikler/anasayfa-icerik-8.html
+- içerikler/yazilar/hakkimizda.html
+- içerikler/yazilar/hizmetlerimiz.html
+- içerikler/sliderler/slider-template.html
+- içerikler/yazilar/urunler/stor-perde.html
+- içerikler/yazilar/urunler/README
+- site_files/css/style.css
+
+MAIN.MASTER KURALI:
+Main.Master içinde:
+- ASP.NET yapısına dokunma.
+- Dinamik menü alanlarına dokunma.
+- Yönetim panelinden gelen alanları değiştirme.
+- Sadece statik görünen metinler varsa onları Avangarde Concept Perde temasına göre değiştir.
+- Header, footer, script/css pathleri bozulmayacak.
+
+DEFAULT.ASPX KURALI:
+Default.aspx içinde:
+- ASP.NET directive yapısına dokunma.
+- asp:Content yapılarına dokunma.
+- Dinamik alanları değiştirme.
+- Sadece statik görünen içerikleri değiştir.
+- Mevcut section ve class yapısını koru.
+
+ÜRÜN SAYFALARI GÖREVİ:
+içerikler/yazilar/urunler/stor-perde.html dosyasını ürün sayfası TEMPLATE’i olarak kullan.
+
+Bu dosyanın:
+- HTML yapısını
+- class isimlerini
+- bölüm düzenini
+- tasarım mantığını
+- mevcut component yapısını
+
+koru.
+
+Bu template’i çoğaltarak aşağıdaki her ürün için ayrı HTML sayfası oluştur.
+
+ÜRÜNLER:
+1. Stor Perde
+2. Zebra Perde
+3. Tül Perde
+4. Fon Perde
+5. Ahşap Jaluzi
+6. Alüminyum Jaluzi
+7. Plise Perde
+8. Zip Perde
+9. Motorlu Perde Sistemleri
+10. Rustik
+11. Kış Bahçesi Perde Sistemleri
+12. Döşemelik Kumaş
+13. Duvar Kağıdı
+
+DOSYA ADLARI:
+Türkçe karakter kullanma. SEO uyumlu dosya adları kullan:
+
+- stor-perde.html
+- zebra-perde.html
+- tul-perde.html
+- fon-perde.html
+- ahsap-jaluzi.html
+- aluminyum-jaluzi.html
+- plise-perde.html
+- zip-perde.html
+- motorlu-perde-sistemleri.html
+- rustik.html
+- kis-bahcesi-perde-sistemleri.html
+- dosemelik-kumas.html
+- duvar-kagidi.html
+
+ÜRÜN SAYFASI İÇERİK YAPISI:
+Her ürün sayfasında mümkün olduğunca şu içerik bölümleri olsun:
+
+1. Ürün adı
+2. Kısa tanıtım paragrafı
+3. Bu ürün nedir?
+4. Nerelerde kullanılır?
+5. Avantajları nelerdir?
+6. Renk, kumaş, model veya malzeme seçenekleri
+7. Ölçü alma ve montaj süreci
+8. Avangarde Concept Perde farkı
+9. Keşif / iletişim çağrısı
+
+ÜRÜNLERE GÖRE İÇERİK ODAKLARI:
+Stor Perde:
+Modern, sade, kullanışlı, ofis ve ev kullanımına uygun.
+
+Zebra Perde:
+Işık kontrolü, modern görünüm, gündüz-gece kullanım avantajı.
+
+Tül Perde:
+Zarif, ferah, klasik ve modern dekorasyona uyumlu.
+
+Fon Perde:
+Dekoratif tamamlayıcı, renk ve kumaş seçenekleri, salon/yatak odası kullanımı.
+
+Ahşap Jaluzi:
+Doğal, sıcak, premium görünüm, ofis ve yaşam alanlarına uygun.
+
+Alüminyum Jaluzi:
+Dayanıklı, pratik, ofis ve ticari alanlar için ideal.
+
+Plise Perde:
+Cam balkon, özel pencere formları, kompakt ve estetik çözüm.
+
+Zip Perde:
+Dış mekan, balkon, teras, kış bahçesi, rüzgar ve güneş kontrolü.
+
+Motorlu Perde Sistemleri:
+Uzaktan kumanda, akıllı ev uyumu, konfor ve teknoloji.
+
+Rustik:
+Klasik ve dekoratif perde uygulamaları, boru ve halka detayları.
+
+Kış Bahçesi Perde Sistemleri:
+Güneş kontrolü, mahremiyet, dört mevsim kullanım.
+
+Döşemelik Kumaş:
+Koltuk, sandalye, puf, dekoratif kumaş çözümleri.
+
+Duvar Kağıdı:
+Dekoratif duvar kaplama, desen, doku, modern ve klasik seçenekler.
+
+SEO GÖREVİ:
+Her ürün sayfası için ayrı SEO bilgisi üret.
+
+Her ürün için şunlar olacak:
+- SEO Title
+- SEO Description
+- SEO Keywords
+- H1
+- URL / Dosya adı
+- Sosyal medya paylaşım açıklaması
+
+SEO bilgilerini şu dosyaya yaz:
+içerikler/yazilar/urunler/seo-urunler.txt
+
+Format:
+
+ÜRÜN: Stor Perde
+Dosya: stor-perde.html
+SEO Title: Stor Perde Modelleri | Avangarde Concept Perde
+SEO Description: Avangarde Concept Perde ile yaşam alanlarınıza özel stor perde modelleri, keşif, ölçü alma ve profesyonel montaj hizmeti.
+SEO Keywords: stor perde, stor perde modelleri, ölçüye özel stor perde, modern perde sistemleri
+H1: Stor Perde Modelleri
+Sosyal Medya Açıklaması: Modern, sade ve kullanışlı stor perde çözümleriyle mekanlarınıza şıklık katın.
+
+SEO KURALLARI:
+1. SEO Title 50-65 karakter civarında olsun.
+2. SEO Description 140-160 karakter civarında olsun.
+3. Her ürün için farklı description yaz.
+4. Keyword stuffing yapma.
+5. Ana ürün kelimesi title ve description içinde geçsin.
+6. Marka adı “Avangarde Concept Perde” title içinde mümkünse yer alsın.
+7. Dosya adlarında Türkçe karakter olmasın.
+8. H1 ürün sayfasındaki ana başlıkla uyumlu olsun.
+
+GENEL SAYFALAR İÇİN SEO:
+Sadece ürünler değil, genel sayfalar için de SEO bilgisi oluştur.
+
+Aşağıdaki genel sayfalar / içerikler için ayrıca SEO önerisi yaz:
+- Ana Sayfa
+- Hakkımızda
+- Hizmetlerimiz
+- Ürünlerimiz
+- Projelerimiz
+- İletişim
+
+Bu bilgileri ayrı dosyaya yaz:
+içerikler/seo-genel.txt
+
+Her biri için:
+- SEO Title
+- SEO Description
+- SEO Keywords
+- H1 önerisi
+- Sayfa açıklaması
+
+ALT VE TITLE ATTRIBUTE GÖREVİ:
+Site içinde kullanılan görseller, butonlar, linkler ve önemli başlıklarda SEO/erişilebilirlik için uygun alt/title değerleri düzenle.
+
+Görseller için:
+- Eğer img etiketi varsa alt="" boş bırakma.
+- Görsel perde/dekorasyonla ilgiliyse açıklayıcı alt yaz.
+- title attribute gerekiyorsa ekle.
+- Mevcut pathleri değiştirme.
+- Görsel dosya adını değiştirme.
+
+Örnek:
+<img src="..." alt="Avangarde Concept Perde modern stor perde uygulaması" title="Modern stor perde uygulaması">
+
+Butonlar için:
+- title attribute eklenebilecek yerlerde ekle.
+- Buton yazılarını perde/dekorasyon temasına uygun yap.
+
+Örnek buton metinleri:
+- Ücretsiz Keşif Talebi
+- Ürünleri İncele
+- Detaylı Bilgi Al
+- Bizimle İletişime Geç
+- Perde Çözümlerimizi Keşfedin
+
+Linkler için:
+- Gerekiyorsa title attribute ekle.
+- Dinamik link yapısına dokunma.
+- Link href yapısını bozma.
+
+Başlıklar için:
+- Sayfa içinde H1/H2/H3 hiyerarşisini koru.
+- Başlıkları Avangarde Concept Perde temasına uygun hale getir.
+- Gereksiz keyword doldurma yapma.
+
+RENK VE FONT YÖNETİMİ:
+site_files/css/style.css içinde kullanılan tüm renkler ve fontlar tek çatı altında toplanacak.
+
+GÖREV:
+1. style.css dosyasının en üstüne düzenli bir :root {} bloğu ekle.
+2. Projede kullanılan ana renkleri CSS değişkeni olarak tanımla.
+3. Projede kullanılan font ailelerini CSS değişkeni olarak tanımla.
+4. style.css içindeki hardcoded renkleri mümkün olduğunca var(--degisken-adi) formatına çevir.
+5. style.css içindeki font-family değerlerini mümkün olduğunca var(--font-adi) formatına çevir.
+6. Renk/font değişkenleri eklenirken tasarım bozulmayacak.
+7. Layout, ölçü, margin, padding, responsive breakpoint gibi şeylere dokunulmayacak.
+8. Sadece renk ve font merkezi yönetimi yapılacak.
+
+KULLANILACAK :root YAPISI:
+style.css başına buna benzer ama projeye uygun genişletilmiş bir yapı ekle:
+
+:root {
+  /* Brand Colors */
+  --color-primary: #C9A646;
+  --color-primary-dark: #A8842F;
+  --color-primary-light: #E3C76F;
+
+  /* Neutral Colors */
+  --color-black: #0F0F0F;
+  --color-dark: #1A1A1A;
+  --color-dark-soft: #242424;
+  --color-white: #FFFFFF;
+  --color-light: #F5F5F5;
+  --color-cream: #FAF6EF;
+  --color-beige: #F2E8D5;
+
+  /* Text Colors */
+  --color-text: #2B2B2B;
+  --color-text-light: #F5F5F5;
+  --color-text-muted: #BFBFBF;
+  --color-text-soft: #6F6F6F;
+
+  /* Border / Shadow */
+  --color-border: #E5E0D6;
+  --color-border-dark: #3A3A3A;
+  --color-overlay: rgba(15, 15, 15, 0.65);
+  --color-shadow: rgba(0, 0, 0, 0.12);
+
+  /* RGB Values */
+  --color-primary-rgb: 201, 166, 70;
+  --color-black-rgb: 15, 15, 15;
+  --color-white-rgb: 255, 255, 255;
+
+  /* Fonts */
+  --font-primary: 'Poppins', Arial, sans-serif;
+  --font-secondary: 'Lato', Arial, sans-serif;
+  --font-accent: 'Tillana', cursive;
+  --font-logo: 'Times New Roman', serif;
+}
+
+RENK SİSTEMİ:
+Avangarde Concept Perde logosuna uygun premium renk sistemi kullanılacak:
+- Siyah
+- Altın
+- Krem
+- Bej
+- Beyaz
+- Koyu gri
+
+CSS YASAKLARI:
+- Tüm siteyi baştan yazma.
+- Bootstrap dosyasına dokunma.
+- FontAwesome dosyasına dokunma.
+- animate.css gibi vendor dosyalarına dokunma.
+- Sadece site_files/css/style.css üzerinde çalış.
+- Mevcut class isimlerini rastgele değiştirme.
+- JS dosyalarına gerekmedikçe dokunma.
+- Yeni framework ekleme.
+
+İÇERİK TONU:
+Kurumsal, zarif, premium ve güven veren Türkçe kullan.
+
+Hedef kitle:
+- Ev sahipleri
+- Ofis sahipleri
+- Oteller
+- Villalar
+- Mimarlık / iç mimarlık projeleri
+- Kurumsal işletmeler
+- Dekorasyon yaptırmak isteyen müşteriler
+
+ÖRNEK TON:
+“Avangarde Concept Perde olarak yaşam alanlarınızın tarzına, ışık ihtiyacına ve kullanım alışkanlıklarına uygun perde çözümleri sunuyoruz. Keşif, ölçü alma, ürün seçimi ve montaj süreçlerini profesyonel şekilde yöneterek mekanlarınıza estetik ve fonksiyon kazandırıyoruz.”
+
+KONTROL AŞAMASI:
+İşlem bittikten sonra şunları kontrol et:
+
+1. ASP.NET WebForms kodları değiştirildi mi?
+2. Dinamik menü / management yapısına dokunuldu mu?
+3. Site tek sayfalık yapıya çevrildi mi?
+4. İçerikler Avangarde Concept Perde temasına uygun mu?
+5. Eğitim/kurs/dershane kalıntısı kaldı mı?
+6. Tüm ürün sayfaları oluşturuldu mu?
+7. stor-perde.html template yapısı korundu mu?
+8. seo-urunler.txt oluşturuldu mu?
+9. seo-genel.txt oluşturuldu mu?
+10. Görsellerde alt/title attribute değerleri düzenlendi mi?
+11. Buton/link title değerleri uygun mu?
+12. style.css içinde :root renk/font değişkenleri eklendi mi?
+13. Hardcoded renk/fontlar mümkün olduğunca değişkenlere bağlandı mı?
+14. Responsive yapı bozuldu mu?
+15. HTML tag/div yapısı bozuldu mu?
+
+SON RAPOR:
+İşlem sonunda kısa ve net rapor ver:
+
+1. Hangi dosyalar değiştirildi?
+2. Hangi dosyalarda sadece metin değişti?
+3. Hangi ürün sayfaları oluşturuldu?
+4. Hangi SEO dosyaları oluşturuldu?
+5. style.css içine hangi ana renk/font değişkenleri eklendi?
+6. Görseller için alt/title çalışması yapıldı mı?
+7. Buton ve link title düzenlemeleri yapıldı mı?
+8. ASP.NET kodlarına dokunulmadığını belirt.
+9. Dinamik menü / management yapılarına dokunulmadığını belirt.
+10. Eğitim/kurs temalı kalıntı kaldıysa listele.
+11. Sabit renk/font kaldıysa neden kaldığını açıkla.
+
+ÇALIŞMA ŞEKLİ:
+Önce projeyi analiz et.
+Sonra sadece gerekli dosyalarda içerik, SEO, alt/title ve CSS değişken düzenlemelerini yap.
+ASP.NET kodlarına, dinamik menülere, management yapısına ve çalışan sistem mantığına dokunma.
