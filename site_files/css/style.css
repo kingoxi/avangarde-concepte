@@ -16940,7 +16940,7 @@ textarea.form-control {
 .pd-showcase{
   display:grid;
   grid-template-columns:minmax(300px, 0.92fr) minmax(0, 1.08fr);
-  gap:30px;
+  gap:100px;
   align-items:stretch;
   margin:34px 0 18px;
 }

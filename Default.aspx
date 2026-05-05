@@ -214,7 +214,8 @@
                     <ItemTemplate>
                         <div class="col-12 col-md-4">
                             <article class="home-blog-card">
-                                <a class="home-blog-card-image" href="/<%= Resources.value.url_Folder %><%= Resources.value.url_Blog %>/<%# Tools.UrlSeo(Resources.value.eval_Title) %>-<%# Eval("Id") %>" title="<%# Eval(Resources.value.eval_Title) %>">
+
+                                <a class="home-blog-card-image" href="/<%= Resources.value.url_Folder %><%= Resources.value.url_Blog %>/<%# Tools.UrlSeo(Eval(Resources.value.eval_Title).ToString()) %>-<%# Eval("Id") %>" title="<%# Eval(Resources.value.eval_Title) %>">
                                     <img src="/Management/UploadFiles/Blog_Images/Small_<%# Eval(Resources.value.eval_Image) %>" alt="<%# Eval(Resources.value.eval_Title) %>" title="<%# Eval(Resources.value.eval_Title) %>" />
                                     <div class="home-blog-card-date">
                                         <span><%# Convert.ToDateTime(Eval("CreationDate")).ToString("dd") %></span>
@@ -223,11 +224,11 @@
                                 </a>
                                 <div class="home-blog-card-content">
                                     <h3>
-                                        <a href="/<%= Resources.value.url_Folder %><%= Resources.value.url_Blog %>/<%# Tools.UrlSeo(Resources.value.eval_Title) %>-<%# Eval("Id") %>" title="<%# Eval(Resources.value.eval_Title) %>">
+                                        <a href="/<%= Resources.value.url_Folder %><%= Resources.value.url_Blog %>/<%# Tools.UrlSeo(Eval(Resources.value.eval_Title).ToString()) %>-<%# Eval("Id") %>" title="<%# Eval(Resources.value.eval_Title) %>">
                                             <%# Eval(Resources.value.eval_Title) %>
                                         </a>
                                     </h3>
-                                    <a class="button-74" role="button" href="/<%= Resources.value.url_Folder %><%= Resources.value.url_Blog %>/<%# Tools.UrlSeo(Resources.value.eval_Title) %>-<%# Eval("Id") %>" title="<%# Eval(Resources.value.eval_Title) %>">
+                                    <a class="button-74" role="button" href="/<%= Resources.value.url_Folder %><%= Resources.value.url_Blog %>/<%# Tools.UrlSeo(Eval(Resources.value.eval_Title).ToString()) %>-<%# Eval("Id") %>" title="<%# Eval(Resources.value.eval_Title) %>">
                                         Devamını Oku
                                     </a>
                                 </div>

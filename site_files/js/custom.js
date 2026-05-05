@@ -508,8 +508,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
                 '.te-testimonial-card-two',
                 '.testimonial-image',
                 '.te-accordion-list-item',
-                '.blog-detail-full',
-                '.blog-detail-gallery-item',
                 '.about-content',
                 '.about-features'
             ].join(','));
@@ -557,7 +555,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
                 '.product-card-v2',
                 '.home-blog-card',
                 '.blog-card-simple',
-                '.blog-detail-gallery-item',
                 '.project-card',
                 '.te-icon-card'
             ].join(','));

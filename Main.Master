@@ -33,8 +33,34 @@
     <%= StaticGeneralSettingManager.GeneralSettingData().Code %>
 
     <style>
+        #contactMap {
+            display: block;
+            width: 100%;
+        }
+
         #contactMap iframe{
             width:100%!important;
+            min-height: 150px;
+            height: 150px;
+        }
+
+        .footer-contact-stack {
+            gap: 10px;
+        }
+
+        .footer-address-text {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--color-text-soft);
+        }
+
+        .footer-address-text i {
+            color: var(--theme-color);
+            line-height: 1.6;
+            margin-top: 1px;
         }
     </style>
 
@@ -80,8 +106,6 @@
                                         <div class="header-top-info">
                                             <div class="te-social-profile">
                                                 <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Facebook %>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-
-                                                <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Twitter %>" target="_blank"><i class="fa-brands fa-twitter"></i></a>
 
                                                 <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Instagram %>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
@@ -197,8 +221,6 @@
                             <div class="te-social-profile">
                                 <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Facebook %>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
 
-                                <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Twitter %>" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-
                                 <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Instagram %>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
                             </div>
@@ -232,8 +254,6 @@
                                     <div class="te-social-profile-wrapper">
                                         <div class="te-social-profile">
                                             <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Facebook %>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-
-                                            <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Twitter %>" target="_blank"><i class="fa-brands fa-twitter"></i></a>
 
                                             <a href="<%= StaticGeneralSettingManager.GeneralSettingData().Instagram %>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                                         </div>
@@ -275,13 +295,21 @@
                                     <h2 class="te-footer-widget-title">
                                         <%= Resources.value.Iletisim_Bilgileri %>
                                     </h2>
-                                    <div class="single-info-wrapper">
+                                    <div class="single-info-wrapper footer-contact-stack">
                                         <div class="single-info">
                                             <span class="text" id="contactMap">
 
                                                 <%= StaticGeneralSettingManager.GeneralSettingData().Maps %>
-                                        
+                                         
                                             </span>
+                                        </div>
+                                        <div class="single-info">
+                                            <a href="https://maps.app.goo.gl/TPQNUrdLRGAZQs4y6" target="_blank">
+                                            <span class="text footer-address-text">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <%= StaticGeneralSettingManager.GeneralSettingData().Address %>
+                                            </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -290,7 +318,49 @@
 
                     </div>
                 </div>
+            </div><style>
+
+    .footer-bottom-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .footer-bottom-links li {
+        list-style: none;
+    }
+
+    .footer-bottom-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 5px;
+        transition: color 0.3s ease;
+    }
+</style>
+
+<div class="footer-bottom-area p-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="footer-bottom-links">
+                    <li><a href="/tr/menu/screen-perde/28">Screen Perde</a></li>
+                    <li><a href="/tr/menu/plise-perde/6">Plise Perde</a></li>
+                    <li><a href="/tr/menu/dikey-perde/27">Dikey Perde</a></li>
+                    <li><a href="/tr/menu/deri-jaluzi/25">Deri Jaluzi</a></li>
+                    <li><a href="/tr/menu/zip-perde/7">Zip Perde</a></li>
+                    <li><a href="/tr/menu/rustik/20">Rustik</a></li>
+                    <li><a href="/tr/menu/motorlu-perde-sistemleri/8">Motorlu Perde Sistemleri</a></li>
+                    <li><a href="/tr/menu/kis-bahcesi-perde-sistemleri/21">Kış Bahçesi Perde Sistemleri</a></li>
+                    <li><a href="/tr/menu/dosemelik-kumas/22">Döşemelik Kumaş</a></li>
+                    <li><a href="/tr/menu/duvar-kagidi/23">Duvar Kağıdı</a></li>
+                </ul>
             </div>
+        </div>
+    </div>
+</div>
             <div class="footer-bottom-area">
                 <div class="container">
                     <div class="row">
